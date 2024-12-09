@@ -8,5 +8,8 @@ public class AppHelloWorldSpring {
         // Launch spring context
 
         var context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
+
+        var bean = context.getBean("name");
+        System.out.println(bean);
     }
 }
