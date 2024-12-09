@@ -1,9 +1,9 @@
 package com.artemissoftware.spring_tutorial;
 
 public class GameRunner {
-    MarioGame game;
+    GamingConsole game;
 
-    public GameRunner(MarioGame game){
+    public GameRunner(GamingConsole game){
         this.game = game;
     }
 
