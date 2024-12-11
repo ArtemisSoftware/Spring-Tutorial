@@ -2,6 +2,7 @@ package com.artemissoftware.spring_tutorial;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 record Person (String name, int age, Address address) {};
 record Address (String firstLine, String city) {};
@@ -34,7 +35,14 @@ public class HelloWorldConfiguration {
         return new Person(name, age, phantasy_address);
     }
 
+    @Bean
+    @Primary
+    public Person person4Parameters(String name, int age, Address real_address) {
+        return new Person(name, age, real_address);
+    }
+
     @Bean(name = "real_address")
+    @Primary
     public Address address() {
         return new Address("Athena temple", "Athens");
     }
