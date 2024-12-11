@@ -1,4 +1,4 @@
-package com.artemissoftware.spring_tutorial;
+package com.artemissoftware.spring_tutorial.helloworld;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;

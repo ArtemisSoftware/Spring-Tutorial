@@ -1,4 +1,4 @@
-package com.artemissoftware.spring_tutorial;
+package com.artemissoftware.spring_tutorial.game;
 
 public class AppGamingBasicJava {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.artemissoftware.spring_tutorial;
+package com.artemissoftware.spring_tutorial.game;
 
 public interface GamingConsole {
     void up();
