@@ -1,6 +1,9 @@
 package com.artemissoftware.spring_tutorial.tutorial_2_game.game;
 
-public class PacmanGame implements GamingConsole{
+import org.springframework.stereotype.Component;
+
+@Component
+public class PacmanGame implements GamingConsole {
     @Override
     public void up() {
         System.out.println("walk and eat up");
