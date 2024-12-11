@@ -1,5 +1,6 @@
 package com.artemissoftware.spring_tutorial;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -41,6 +42,11 @@ public class HelloWorldConfiguration {
         return new Person(name, age, real_address);
     }
 
+    @Bean
+    public Person person5Qualifier(String name, int age, @Qualifier("address2Qualifier") Address address) {
+        return new Person(name, age, address);
+    }
+
     @Bean(name = "real_address")
     @Primary
     public Address address() {
@@ -48,6 +54,7 @@ public class HelloWorldConfiguration {
     }
 
     @Bean(name = "phantasy_address")
+    @Qualifier("address2Qualifier")
     public Address address2() {
         return new Address("Olimpus", "Athens");
     }
