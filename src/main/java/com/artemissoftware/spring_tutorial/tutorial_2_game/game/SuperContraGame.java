@@ -1,5 +1,10 @@
 package com.artemissoftware.spring_tutorial.tutorial_2_game.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("SuperContraGameQualifier")
 public class SuperContraGame implements GamingConsole {
     @Override
     public void up() {

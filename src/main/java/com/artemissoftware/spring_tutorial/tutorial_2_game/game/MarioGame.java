@@ -1,5 +1,10 @@
 package com.artemissoftware.spring_tutorial.tutorial_2_game.game;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class MarioGame implements GamingConsole{
 
     @Override
