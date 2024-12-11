@@ -1,4 +1,7 @@
-package com.artemissoftware.spring_tutorial.game;
+package com.artemissoftware.spring_tutorial.tutorial_2_game.javagame;
+
+import com.artemissoftware.spring_tutorial.tutorial_2_game.game.GameRunner;
+import com.artemissoftware.spring_tutorial.tutorial_2_game.game.SuperContraGame;
 
 public class AppGamingBasicJava {
     public static void main(String[] args) {

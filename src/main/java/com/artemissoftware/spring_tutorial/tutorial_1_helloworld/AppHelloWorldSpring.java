@@ -1,4 +1,4 @@
-package com.artemissoftware.spring_tutorial.helloworld;
+package com.artemissoftware.spring_tutorial.tutorial_1_helloworld;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

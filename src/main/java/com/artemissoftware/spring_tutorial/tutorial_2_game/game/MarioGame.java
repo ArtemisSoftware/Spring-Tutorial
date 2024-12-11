@@ -1,4 +1,4 @@
-package com.artemissoftware.spring_tutorial.game;
+package com.artemissoftware.spring_tutorial.tutorial_2_game.game;
 
 public class MarioGame implements GamingConsole{
 
