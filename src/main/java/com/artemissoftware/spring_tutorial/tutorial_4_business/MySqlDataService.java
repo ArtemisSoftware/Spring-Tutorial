@@ -1,8 +1,8 @@
 package com.artemissoftware.spring_tutorial.tutorial_4_business;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class MySqlDataService implements DataService{
     @Override
     public int[] retrieveData() {

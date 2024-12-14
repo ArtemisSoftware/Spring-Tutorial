@@ -1,10 +1,10 @@
 package com.artemissoftware.spring_tutorial.tutorial_4_business;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 
-@Component
+@Service
 public class BusinessCalculationService {
     private DataService dataService;
 

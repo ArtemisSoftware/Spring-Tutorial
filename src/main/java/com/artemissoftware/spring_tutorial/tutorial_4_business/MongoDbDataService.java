@@ -1,9 +1,9 @@
 package com.artemissoftware.spring_tutorial.tutorial_4_business;
 
 import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 @Primary
 public class MongoDbDataService implements DataService {
     @Override
